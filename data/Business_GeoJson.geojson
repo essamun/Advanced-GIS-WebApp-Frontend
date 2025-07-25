@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Business_GeoJson",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "name": "Soly's Grille", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -8840614.962175730615854, 5431584.319868807680905 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Pumpernickel's", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -8840630.974945215508342, 5431581.051956668496132 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Timothy's", "type": "CoffeeShop" }, "geometry": { "type": "Point", "coordinates": [ -8840599.766384283080697, 5431480.727053987793624 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Fit for Life sandwich bar", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -8840638.327747529372573, 5431571.084824643097818 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Print Three", "type": "print_shop" }, "geometry": { "type": "Point", "coordinates": [ -8840569.538196993991733, 5431563.078439901582897 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Rexall", "type": "pharmacy" }, "geometry": { "type": "Point", "coordinates": [ -8840567.250658495351672, 5431549.516604522243142 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Pizza Manna", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -8840607.445977810770273, 5431525.824241511523724 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "J Gift", "type": "store" }, "geometry": { "type": "Point", "coordinates": [ -8840581.139285087585449, 5431507.197142316959798 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "J Mart", "type": "store" }, "geometry": { "type": "Point", "coordinates": [ -8840592.740373183041811, 5431490.530790405347943 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "RBC", "type": "bank" }, "geometry": { "type": "Point", "coordinates": [ -8840567.087262885645032, 5431593.306627191603184 ] } }
+]
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Advanced GIS Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { 
+      height: 100vh; 
+      width: 100%;
+      background: #f0f0f0;
+    }
+    
+    /* Sidebar styling */
+    #sidebar {
+      position: absolute;
+      top: 80px;
+      left: 10px;
+      z-index: 1000;
+      background: white;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      max-width: 250px;
+      font-family: sans-serif;
+      font-size: 12px; /* Reduced from default */
+      line-height: 1.2; /* Tighter line spacing */
+    }
+    
+    #sidebar h2 {
+      margin: 0 0 8px 0;
+      font-size: 16px; /* Slightly larger for headings */
+    }
+
+    #sidebar h3 {
+      margin: 10px 0 8px 0;
+      font-size: 14px;
+    }
+    
+    #sidebar hr {
+      margin: 10px 0;
+      border: 0;
+      border-top: 1px solid #eee;
+    }
+    
+    #sidebar label {
+      display: block;
+      margin: 3px 0;
+      cursor: pointer;
+    }
+    
+    #sidebar button {
+      width: 100%;
+      padding: 4px;
+      margin: 3px 0 0 0;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px; /* Match sidebar font */
+    }
+    
+   /* Chart container adjustments */
+#business-chart-container {
+  margin: 5px 0;
+  height: 180px;
+}
+
+/* Button group spacing */
+#sidebar > button {
+  margin-top: 5px;
+}
+
+/* Compact chart canvas */
+#business-chart {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+    #sidebar button:hover {
+      background: #45a049;
+    }
+
+    /* Buffer analysis styles */
+    .leaflet-interactive.buffer-zone {
+      stroke-dasharray: 5, 5;
+    }
+
+    .highlighted-business {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .user-location-icon {
+      font-size: 24px;
+      text-align: center;
+      line-height: 32px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🧭 Sidebar Container -->
+  <div id="sidebar">
+    <h2>Map Layers</h2>
+    <label><input type="checkbox" id="toggleStreets" checked> Streets</label><br>
+    <label><input type="checkbox" id="toggleBuildings" checked> Buildings</label><br>
+    <label><input type="checkbox" id="toggleBusinesses" checked> All Businesses</label>
+
+    <hr>
+    <h3>Filter Businesses</h3>
+    <label><input type="checkbox" class="biz-filter" data-type="pharmacy" checked> Pharmacy</label><br>
+    <label><input type="checkbox" class="biz-filter" data-type="restaurant" checked> Restaurant</label><br>
+    <label><input type="checkbox" class="biz-filter" data-type="store" checked> Store</label><br>
+    <label><input type="checkbox" class="biz-filter" data-type="coffeeshop" checked> Coffee Shop</label><br>
+    <label><input type="checkbox" class="biz-filter" data-type="print_shop" checked> Print Shop</label><br>
+    <label><input type="checkbox" class="biz-filter" data-type="bank" checked> Bank</label><br>
+
+
+    <!-- Replace the business summary section with this -->
+    <hr>
+    <h3>Business Distribution</h3>
+    <div style="height: 250px; width: 100%; position: relative;">
+      <canvas id="business-chart"></canvas>
+    </div>
+    <button id="toggleChartType" style="width: 100%; margin-top: 10px; background: #2196F3;">
+      🔄 Switch to Bar Chart
+    </button>
+
+
+    <hr>
+    <button id="btnNearest">🔍 Find Nearest Business</button>
+    <button id="btnClearBuffer" style="background: #f44336; margin-top: 10px;">🗑️ Clear Buffer Analysis</button>
+  </div>
+
+  <div id="map"></div>
+
+
+  <!-- Load Leaflet first -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Load Turf.js for spatial analysis -->
+  <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Then your custom JS -->
+  <script src="/templates/main.js"></script>
+</body>
+</html>

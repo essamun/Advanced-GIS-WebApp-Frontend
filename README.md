@@ -64,22 +64,7 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 ├── 📄 turf-tools.js      # Buffer and distance calculations
 └── 📄 README.md          # This file
 
-
-Advanced-GIS-WebApp-Frontend/
-├── data/ → GeoJSON files for buildings, streets, businesses
-├── images/ → Custom business-type icons
-├── screenshots/ → Screenshots used in README
-├── index.html → Main web page
-├── style.css → Styling for map and UI
-├── main.js → Leaflet map setup and interactions
-├── chart.js → Chart rendering logic (Chart.js)
-├── turf-tools.js → Buffer and nearest business tools using Turf.js
-└── README.md → Project documentation
-
 ---
-
-
-
 
 ## 🚀 Next Phases
 

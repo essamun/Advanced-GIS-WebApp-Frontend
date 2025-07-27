@@ -8,11 +8,12 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 ---
 
 ## 🧰 Tools & Technologies
-- **QGIS** for spatial data digitization
-- **GeoJSON** as the web-ready spatial format
-- **Leaflet.js** for web map rendering
-- **Turf.js** for client-side spatial analysis (buffer, distance)
-- **Chart.js** for business-type visualization
+
+ **QGIS** – Digitization and geodatabase creation  
+- **Leaflet.js** – Interactive mapping library  
+- **Turf.js** – Client-side geospatial processing (buffer, distance)  
+- **Chart.js** – Data visualization (bar/pie charts)  
+- **GeoJSON** – Web-ready spatial data format  
 
 ---
 
@@ -24,6 +25,26 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 - ✅ **Buffer analysis**: find businesses within 200 meters of any selected one
 - ✅ **Nearest business tool**: click anywhere to locate the closest business
 - ✅ **Charts**: Pie and Bar chart toggle showing business counts
+
+
+✅ **Multiple GIS Layers**  
+&nbsp;&nbsp;&nbsp;&nbsp;- Buildings, streets, and business points digitized via QGIS and displayed via Leaflet  
+
+✅ **Custom Icons**  
+&nbsp;&nbsp;&nbsp;&nbsp;- Different business types visualized with distinct icons  
+
+✅ **Sidebar UI**  
+&nbsp;&nbsp;&nbsp;&nbsp;- Toggle layers, filter by business type  
+
+✅ **Spatial Analysis Tools**  
+&nbsp;&nbsp;&nbsp;&nbsp;- *Buffer Tool*: Find businesses within 500m of a selected one  
+&nbsp;&nbsp;&nbsp;&nbsp;- *Nearest Business Tool*: Click any location to identify the closest business  
+
+✅ **Business Analytics**  
+&nbsp;&nbsp;&nbsp;&nbsp;- Toggle between pie/bar charts to display business counts by type  
+
+✅ **Fully Static & Client-Side**  
+&nbsp;&nbsp;&nbsp;&nbsp;- Entirely functional using just HTML/JS/CSS hosted on GitHub Pages  
 
 ---
 
@@ -42,11 +63,30 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 
 ## 📌 About the Author
 
-👤 **Essam T.**  
-MSc Geomatics | Full-Stack Web Developer | Machine Learning Practitioner  
-Specializing in GIS, Python, and modern web-based spatial solutions.
+👤 Essam Afifi
+Canadian Data & AI Consultant | GIS Developer | Full-Stack Engineer
+20+ Years of Experience | MSc in Geomatics | PMP® Certified
+Fluent in English 🇬🇧, French 🇫🇷, and Arabic 🇪🇬
+
+🌍 LinkedIn: [Essam Afifi](https://www.linkedin.com/in/essam-afifi-a38a3a362/)
+📫 (esstoronto#gmail.com)
+
+Passionate about delivering data-driven solutions with a blend of geospatial intelligence, machine learning, and modern web technologies. Specializing in Python, .NET, PostGIS, Leaflet, and cloud-based spatial systems.
 
 ---
+
+## 📁 Project Structure
+📂 Advanced-GIS-WebApp-Frontend
+├── 📁 data               # GeoJSON files for each layer
+├── 📁 images             # Custom icons
+├── 📁 screenshots        # Screenshots for documentation
+├── 📄 index.html         # Main web page
+├── 📄 style.css          # Map and UI styling
+├── 📄 main.js            # Leaflet map and tools
+├── 📄 chart.js           # Business chart generation
+├── 📄 turf-tools.js      # Buffer and distance calculations
+└── 📄 README.md          # This file
+
 
 ## 🚀 Next Phases
 

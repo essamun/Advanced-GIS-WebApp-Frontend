@@ -3,7 +3,7 @@
 This project is the **first phase** of a multi-part GIS application, showcasing modern web-based mapping and spatial analysis using **Leaflet.js**, **Turf.js**, and **GeoJSON**. It visualizes digitized geographic data from a Toronto neighborhood and provides interactive tools for analysis and exploration.
 
 ## 🌍 Live Demo
-📎 [View the live map on GitHub Pages](https://your-username.github.io/Advanced-GIS-WebApp-Frontend/)
+📎 [View the live map on GitHub Pages](https://essamun.github.io/Advanced-GIS-WebApp-Frontend/)
 
 ---
 

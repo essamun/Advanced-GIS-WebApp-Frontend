@@ -30,49 +30,49 @@ let currentChartType = 'pie';
 // Business Icons Configuration
 const businessIcons = {
   pharmacy: L.icon({
-    iconUrl: '/images/prescription-bottle-medical-solid.svg',
+    iconUrl: 'images/prescription-bottle-medical-solid.svg',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   restaurant: L.icon({
-    iconUrl: './images/restaurant.svg',
+    iconUrl: '.images/restaurant.svg',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   store: L.icon({
-    iconUrl: '/images/cash-register-solid.svg',
+    iconUrl: 'images/cash-register-solid.svg',
     iconSize: [24, 24],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   coffeeshop: L.icon({
-    iconUrl: '/images/mug-hot-solid.svg',
+    iconUrl: 'images/mug-hot-solid.svg',
     iconSize: [24, 24],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   print_shop: L.icon({
-    iconUrl: '/images/print-solid.svg',
+    iconUrl: 'images/print-solid.svg',
     iconSize: [24, 24],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   bank: L.icon({
-    iconUrl: '/images/building-columns-solid.svg',
+    iconUrl: 'images/building-columns-solid.svg',
     iconSize: [24, 24],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   default: L.icon({
-    iconUrl: '/images/mug-hot-solid.svg',
+    iconUrl: 'images/mug-hot-solid.svg',
     iconSize: [24, 24],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
   }),
   highlighted: L.icon({
-    iconUrl: '/images/star-solid.svg',
+    iconUrl: 'images/star-solid.svg',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
@@ -80,7 +80,7 @@ const businessIcons = {
 };
 
 // 🛣️ Load and style Streets layer
-fetch('/data/Streets_GeoJson.geojson')
+fetch('data/Streets_GeoJson.geojson')
   .then(res => {
     if (!res.ok) throw new Error('Failed to load streets');
     return res.json();
@@ -97,7 +97,7 @@ fetch('/data/Streets_GeoJson.geojson')
   .catch(err => console.error('Street layer error:', err));
 
 // 🏢 Load and style Buildings layer
-fetch('/data/Buildings.geojson')
+fetch('data/Buildings.geojson')
   .then(res => res.json())
   .then(data => {
     buildingsLayer = L.geoJSON(data, {
@@ -295,7 +295,7 @@ function drawBusinessChart() {
 }
 
 function loadBusinessLayer() {
-  fetch('/data/Business_GeoJson.geojson')
+  fetch('data/Business_GeoJson.geojson')
     .then(res => res.json())
     .then(data => {
       if (businessLayer && map.hasLayer(businessLayer)) {

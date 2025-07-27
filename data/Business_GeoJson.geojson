@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Business_GeoJson",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "name": "Soly's Grille", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -79.416595415381835, 43.78080918300256 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Pumpernickel's", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -79.416739260537526, 43.780787988089848 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Timothy's", "type": "CoffeeShop" }, "geometry": { "type": "Point", "coordinates": [ -79.416458909264719, 43.780137300613021 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Fit for Life sandwich bar", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -79.416805311884531, 43.780723343559615 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Print Three", "type": "print_shop" }, "geometry": { "type": "Point", "coordinates": [ -79.416187364838194, 43.780671415935537 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Rexall", "type": "pharmacy" }, "geometry": { "type": "Point", "coordinates": [ -79.416166815530232, 43.780583456795931 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "Pizza Manna", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ -79.416527896227137, 43.780429792928274 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "J Gift", "type": "store" }, "geometry": { "type": "Point", "coordinates": [ -79.416291579185668, 43.780308981058475 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "J Mart", "type": "store" }, "geometry": { "type": "Point", "coordinates": [ -79.416395793533141, 43.780200886020658 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "RBC", "type": "bank" }, "geometry": { "type": "Point", "coordinates": [ -79.416165347722483, 43.780867468973824 ] } }
+]
+}

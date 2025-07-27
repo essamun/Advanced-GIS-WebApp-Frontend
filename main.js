@@ -36,7 +36,7 @@ const businessIcons = {
     popupAnchor: [0, -32]
   }),
   restaurant: L.icon({
-    iconUrl: '.images/restaurant.svg',
+    iconUrl: 'images/restaurant.svg',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]

@@ -19,14 +19,6 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 
 ## 🗂️ Features
 
-- ✅ **Multiple GIS layers**: buildings, streets, and business points
-- ✅ **Custom icons** for different business types
-- ✅ **Sidebar UI** for toggling layers and filtering business types
-- ✅ **Buffer analysis**: find businesses within 200 meters of any selected one
-- ✅ **Nearest business tool**: click anywhere to locate the closest business
-- ✅ **Charts**: Pie and Bar chart toggle showing business counts
-
-
 ✅ **Multiple GIS Layers**  
 &nbsp;&nbsp;&nbsp;&nbsp;- Buildings, streets, and business points digitized via QGIS and displayed via Leaflet  
 
@@ -60,21 +52,6 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 
 ---
 
-
-## 📌 About the Author
-
-👤 Essam Afifi
-Canadian Data & AI Consultant | GIS Developer | Full-Stack Engineer
-20+ Years of Experience | MSc in Geomatics | PMP® Certified
-Fluent in English 🇬🇧, French 🇫🇷, and Arabic 🇪🇬
-
-🌍 LinkedIn: [Essam Afifi](https://www.linkedin.com/in/essam-afifi-a38a3a362/)
-📫 (esstoronto#gmail.com)
-
-Passionate about delivering data-driven solutions with a blend of geospatial intelligence, machine learning, and modern web technologies. Specializing in Python, .NET, PostGIS, Leaflet, and cloud-based spatial systems.
-
----
-
 ## 📁 Project Structure
 📂 Advanced-GIS-WebApp-Frontend
 ├── 📁 data               # GeoJSON files for each layer
@@ -93,8 +70,21 @@ Passionate about delivering data-driven solutions with a blend of geospatial int
 This project is part of a **multi-phase GIS web application**:
 
 1. **Phase 1 – Static GIS Map (this repo)**
-2. [Planned] **Phase 2 – Flask + PostGIS backend for dynamic querying**
+2. [Completed] **Phase 2 – Flask + PostGIS backend for dynamic querying**
 3. [Planned] **Phase 3 – ML-enhanced GIS tools (clustering, predictions)**
 
-Follow me on [GitHub](https://github.com/essamun) for updates.
+
+## 📌 About the Author
+
+👤 Essam Afifi
+Canadian Data & AI Consultant | GIS Developer | Full-Stack Engineer
+20+ Years of Experience | MSc in Geomatics | PMP® Certified
+Fluent in English 🇬🇧, French 🇫🇷, and Arabic 🇪🇬
+
+🌍 LinkedIn: [Essam Afifi](https://www.linkedin.com/in/essam-afifi-a38a3a362/)
+📫 (esstoronto#gmail.com)
+
+Passionate about delivering data-driven solutions with a blend of geospatial intelligence, machine learning, and modern web technologies. Specializing in Python, .NET, PostGIS, Leaflet, and cloud-based spatial systems.
+
+---
 

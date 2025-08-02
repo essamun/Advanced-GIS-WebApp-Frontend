@@ -54,14 +54,23 @@ This project is the **first phase** of a multi-part GIS application, showcasing 
 
 ## 📁 Project Structure
 📂 Advanced-GIS-WebApp-Frontend
+
 ├── 📁 data               # GeoJSON files for each layer
+
 ├── 📁 images             # Custom icons
+
 ├── 📁 screenshots        # Screenshots for documentation
+
 ├── 📄 index.html         # Main web page
+
 ├── 📄 style.css          # Map and UI styling
+
 ├── 📄 main.js            # Leaflet map and tools
+
 ├── 📄 chart.js           # Business chart generation
+
 ├── 📄 turf-tools.js      # Buffer and distance calculations
+
 └── 📄 README.md          # This file
 
 ---
@@ -88,4 +97,5 @@ Fluent in English 🇬🇧, French 🇫🇷, and Arabic 🇪🇬
 Passionate about delivering data-driven solutions with a blend of geospatial intelligence, machine learning, and modern web technologies. Specializing in Python, .NET, PostGIS, Leaflet, and cloud-based spatial systems.
 
 ---
+
 
